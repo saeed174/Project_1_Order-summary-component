@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-bluet: hsl(225, 100%, 98%);
+    --distributed-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+    background-image: url('./images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--pale-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 80%;
+}
+
+#card {
+    justify-content: center;
+    background-color: var(--very-pale-bluet);
+    border-radius: 12px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    height: 90%;
+    max-width: 450px;
+    width: 100%;
+}
+
+#card>img{
+    width: 100%;
+    height: auto;
+}
+
+.card-content{
+    padding: 24px 50px;
+    align-content: center;
+}
+
+.card-content h1{
+    font-size: 24px;
+    font-weight: 900;
+    color: var(--dark-blue);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.card-content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--dark-blue);
+    margin-bottom: 24px;
+    text-align: center;
+    line-height: 30px;
+    margin: 0 0 14px 0;
+}
+
+.plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    height: 100%;
+    border: 2px solid transparent;
+    background-color: hsla(225, 100%, 94%, 0.414);
+    border-radius: 10px;
+    margin-top: 0;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left>img {
+    margin-right: 10px;
+}
+
+.left .card-plan-text{
+    position: relative;
+    top: 10px
+}
+
+.left h3{
+    font-size: 16px;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+
+.plan a{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--bright-blue);
+    position: relative;
+    bottom: 5px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.buttons button {
+    margin: 12px 0 5px;
+    height: 40px;
+    border-radius: 12px;
+}
+
+.buttons .btn-proceed{
+    background-color: var(--bright-blue);
+    color: white;
+    border: none;
+}
+
+.buttons .btn-cancel{
+    background-color: transparent;
+    color: var(--dark-blue);
+    border: 2px solid transparent;
+}
