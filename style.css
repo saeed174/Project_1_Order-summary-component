@@ -57,11 +57,12 @@ main {
     font-size: 28px;
     font-weight: 900;
     color: var(--dark-blue);
-    margin-bottom: 16px;
+    margin-bottom: 26px;
+    margin-top: 26px;
     text-align: center;
 }
 
-.card-content p{
+.card-content>p{
     font-size: 16px;
     font-weight: 400;
     color: var(--dark-blue);
@@ -121,12 +122,14 @@ main {
     margin: 12px 0 5px;
     height: 40px;
     border-radius: 12px;
+    font-weight: 900;
 }
 
 .buttons .btn-proceed{
     background-color: var(--bright-blue);
     color: white;
     border: none;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 .buttons .btn-cancel{
