@@ -15,10 +15,10 @@
 }
 
 body {
+    background-color: var(--pale-blue);
     background-image: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: var(--pale-blue);
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
