@@ -18,11 +18,11 @@ body {
     background-color: var(--pale-blue);
     background-image: url('./images/pattern-background-desktop.svg');
     background-repeat: no-repeat;
+    background-origin: inherit;
     background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 main {
@@ -55,7 +55,7 @@ main {
 }
 
 .card-content h1{
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 900;
     color: var(--dark-blue);
     margin-bottom: 16px;
@@ -98,7 +98,7 @@ main {
     top: 10px
 }
 
-.left h3{
+.card-plan-text h3{
     font-size: 16px;
     font-weight: 900;
     color: var(--dark-blue);
@@ -134,4 +134,45 @@ main {
     background-color: transparent;
     color: var(--dark-blue);
     border: 2px solid transparent;
+}
+
+/* Mobile Response */
+@media (max-width: 600px) {
+    body { 
+        background-color: var(--pale-blue);
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+
+    #card
+    {
+        height: 75%;
+        max-width: 320px;
+    }
+
+    .card-content{
+        padding: 12px 25px;
+    }
+
+    .card-content h1{
+        font-size: 22px;
+    }
+    .plan{
+        padding: 0px 5px;
+    }
+
+    .left>img {
+        margin-right: 5px;
+        width: 40px;
+    }
+
+    .card-content p{
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .card-plan-text h3{
+        font-size: 14px;
+    }
+    .card-plan-text p{
+        font-size: 12px;
+    }
 }
